@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}Mi Web{% endblock %}</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <nav>
+        <a href="zero-mission.html">Zero Mission </a></li>
+        <a href="samus-returns.html">Samus Returns</a></li>
+        <a href="super-metroid.html">Super Metroid</a></li>
+    </nav>
+
+    <div class="contendor-padre">
+        {% block contenido %}{% endblock %}
+    </div>
+</body>
+</html>
